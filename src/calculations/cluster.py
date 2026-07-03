@@ -46,8 +46,6 @@ class Cluster:
     def in_cluster(board: list[list[Symbol]], reel: int, row: int, og_symbol: str, wild_key: str = "wild") -> bool:
         """Checks if a symbol (including wilds) match cluster type."""
         sym = board[reel][row]
-        # `.wild` slot is equivalent to check_attribute("wild") (set whenever "wild" is a special flag),
-        # but skips the varargs loop + string getattr in this 7M+ calls/run hot path.
         if sym.wild or og_symbol == sym.name:
             return True
 

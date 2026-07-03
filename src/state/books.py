@@ -2,7 +2,7 @@
 
 
 def _clone(obj: object):
-    t = type(object)
+    t = type(obj)
     if t == dict:
         return {k: _clone(v) for k, v in obj.items()}
     if t == list:
