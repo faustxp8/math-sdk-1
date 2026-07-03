@@ -8,6 +8,7 @@ from utils.game_analytics.run_analysis import create_stat_sheet
 from utils.rgs_verification import execute_all_tests
 from src.state.run_sims import create_books
 from src.write_data.write_configs import generate_configs
+import time
 
 if __name__ == "__main__":
 
@@ -24,9 +25,9 @@ if __name__ == "__main__":
 
     run_conditions = {
         "run_sims": True,
-        "run_optimization": True,
-        "run_analysis": True,
-        "run_format_checks": True,
+        "run_optimization": False,
+        "run_analysis": False,
+        "run_format_checks": False,
     }
     target_modes = list(num_sim_args.keys())
 
@@ -35,6 +36,7 @@ if __name__ == "__main__":
     if run_conditions["run_optimization"] or run_conditions["run_analysis"]:
         optimization_setup_class = OptimizationSetup(config)
 
+    time_start = time.time()
     if run_conditions["run_sims"]:
         create_books(
             gamestate,
@@ -46,6 +48,9 @@ if __name__ == "__main__":
             profiling,
         )
 
+    print("\n\n")
+    print(time.time() - time_start)
+    print("\n\n")
     generate_configs(gamestate)
 
     if run_conditions["run_optimization"]:

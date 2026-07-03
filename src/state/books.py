@@ -1,6 +1,13 @@
 "Handles independent simulation events and details."
 
-from copy import deepcopy
+
+def _clone(obj: object):
+    t = type(object)
+    if t == dict:
+        return {k: _clone(v) for k, v in obj.items()}
+    if t == list:
+        return [_clone(x) for x in obj]
+    return obj
 
 
 class Book:
@@ -17,7 +24,7 @@ class Book:
 
     def add_event(self, event: dict):
         "Append event to book."
-        self.events.append(deepcopy(event))
+        self.events.append(_clone(event))
 
     def append_book_items(self, event_id: int, appended_info: dict):
         "Modify an existing book event at position 'event_id'"
