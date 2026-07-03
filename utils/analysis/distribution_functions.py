@@ -125,7 +125,7 @@ def conditional_value_at_risk(cutoff: float, dist: dict, total_weight) -> float:
 def get_etl_cvar_p5k_10k_vales(dist: dict, bet_cost: float, total_weight=None) -> list[float]:
     """Get Math Validation Values"""
     if total_weight is None:
-        total_weight = sum(list(dict.values()))
+        total_weight = sum(list(dist.values()))
 
     p5k, p10k, cvar, etl40, etl10k = 0, 0, 0, 0, 0
     for win, weight in dist.items():
