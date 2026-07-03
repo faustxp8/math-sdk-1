@@ -25,38 +25,37 @@ class Cluster:
         return (reel_to_overlay, row_to_overlay)
 
     @staticmethod
-    def get_neighbours(board: list[list[Symbol]], reel: int, row: int, local_checked: list) -> list:
+    def get_neighbours(board: list[list[Symbol]], reel: int, row: int, local_checked: set) -> list:
         """All neighbouring symbols within board range."""
         neighbours = []
-        if reel > 0:
-            if (reel - 1, row) not in local_checked:
-                neighbours += [(reel - 1, row)]
-                local_checked += [(reel - 1, row)]
-        if reel < len(board) - 1:
-            if (reel + 1, row) not in local_checked:
-                neighbours += [(reel + 1, row)]
-                local_checked += [(reel + 1, row)]
-        if row > 0:
-            if (reel, row - 1) not in local_checked:
-                neighbours += [(reel, row - 1)]
-                local_checked += [(reel, row - 1)]
-        if row < len(board[reel]) - 1:
-            if (reel, row + 1) not in local_checked:
-                neighbours += [(reel, row + 1)]
-                local_checked += [(reel, row + 1)]
+        if reel > 0 and (reel - 1, row) not in local_checked:
+            neighbours.append((reel - 1, row))
+            local_checked.add((reel - 1, row))
+        if reel < len(board) - 1 and (reel + 1, row) not in local_checked:
+            neighbours.append((reel + 1, row))
+            local_checked.add((reel + 1, row))
+        if row > 0 and (reel, row - 1) not in local_checked:
+            neighbours.append((reel, row - 1))
+            local_checked.add((reel, row - 1))
+        if row < len(board[reel]) - 1 and (reel, row + 1) not in local_checked:
+            neighbours.append((reel, row + 1))
+            local_checked.add((reel, row + 1))
         return neighbours
 
     @staticmethod
     def in_cluster(board: list[list[Symbol]], reel: int, row: int, og_symbol: str, wild_key: str = "wild") -> bool:
         """Checks if a symbol (including wilds) match cluster type."""
-        if board[reel][row].check_attribute(wild_key) or og_symbol == board[reel][row].name:
+        sym = board[reel][row]
+        # `.wild` slot is equivalent to check_attribute("wild") (set whenever "wild" is a special flag),
+        # but skips the varargs loop + string getattr in this 7M+ calls/run hot path.
+        if sym.wild or og_symbol == sym.name:
             return True
 
     @staticmethod
     def check_all_neighbours(
         board: Board,
-        already_checked: list,
-        local_checked: list,
+        already_checked: set,
+        local_checked: set,
         potential_cluster: list,
         reel,
         row,
@@ -67,8 +66,8 @@ class Cluster:
         neighbours = Cluster.get_neighbours(board, reel, row, local_checked)
         for reel_, row_ in neighbours:
             if Cluster.in_cluster(board, reel_, row_, og_symbol, wild_key):
-                potential_cluster += [(reel_, row_)]
-                already_checked += [(reel_, row_)]
+                potential_cluster.append((reel_, row_))
+                already_checked.add((reel_, row_))
                 Cluster.check_all_neighbours(
                     board,
                     already_checked,
@@ -83,14 +82,14 @@ class Cluster:
     @staticmethod
     def get_clusters(board: list[list[Symbol]], wild_key: str = "wild") -> dict:
         """Return all symbol clusters of size >= 1."""
-        already_checked = []
+        already_checked = set()
         clusters = defaultdict(list)
         for reel, _ in enumerate(board):
             for row, _ in enumerate(board[reel]):
-                if (reel, row) not in already_checked and not (board[reel][row].check_attribute(wild_key)):
+                if (reel, row) not in already_checked and not board[reel][row].wild:
                     potential_cluster = [(reel, row)]
-                    already_checked += [(reel, row)]
-                    local_checked = [(reel, row)]
+                    already_checked.add((reel, row))
+                    local_checked = {(reel, row)}
                     symbol = board[reel][row].name
                     Cluster.check_all_neighbours(
                         board,
