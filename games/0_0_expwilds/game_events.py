@@ -11,6 +11,15 @@ WIN_DATA = "winInfo"
 PRIZE_WIN_DATA = "prizeWinInfo"
 
 
+def _clone_wilds(obj: object):
+    """Clone wild objects"""
+    if isinstance(obj, list):
+        return [_clone_wilds(x) for x in obj]
+    elif isinstance(obj, dict):
+        return {k: _clone_wilds(v) for k, v in obj.items()}
+    return obj
+
+
 def new_expanding_wild_event(gamestate) -> None:
     """Passed after reveal event"""
     new_exp_wilds = gamestate.new_exp_wilds

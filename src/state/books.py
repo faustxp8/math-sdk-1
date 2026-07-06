@@ -3,9 +3,9 @@
 
 def _clone(obj: object):
     t = type(obj)
-    if t == dict:
+    if t is dict:
         return {k: _clone(v) for k, v in obj.items()}
-    if t == list:
+    if t is list:
         return [_clone(x) for x in obj]
     return obj
 

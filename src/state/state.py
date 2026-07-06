@@ -1,4 +1,4 @@
-from copy import copy, deepcopy
+from copy import copy
 from abc import ABC, abstractmethod
 from warnings import warn
 import random
@@ -150,10 +150,10 @@ class GeneralGameState(ABC):
 
     def check_force_keys(self, description) -> None:
         """Check and append unique force-key parameters."""
-        current_mode_force_keys = self.get_current_betmode().get_force_keys()  # type:ignore
+        current_mode_force_keys = self.get_current_betmode().get_force_keys()  # type: ignore
         for keyValue in description:
             if keyValue[0] not in current_mode_force_keys:
-                self.get_current_betmode().add_force_key(keyValue[0])  # type:ignore
+                self.get_current_betmode().add_force_key(keyValue[0])  # type: ignore
 
     def combine(self, modes, betmode_name) -> None:
         """Retrieve unique force record keys."""
@@ -161,10 +161,10 @@ class GeneralGameState(ABC):
             for betmode in modeConfig:
                 if betmode.get_name() == betmode_name:
                     break
-            force_keys = betmode.get_force_keys()  # type:ignore
+            force_keys = betmode.get_force_keys()  # type: ignore
             for key in force_keys:
-                if key not in self.get_betmode(betmode_name).get_force_keys():  # type:ignore
-                    self.get_betmode(betmode_name).add_force_key(key)  # type:ignore
+                if key not in self.get_betmode(betmode_name).get_force_keys():  # type: ignore
+                    self.get_betmode(betmode_name).add_force_key(key)  # type: ignore
 
     def imprint_wins(self) -> None:
         """Record all events to library if criteria conditions are satisfied."""
