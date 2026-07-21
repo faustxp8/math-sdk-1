@@ -1,0 +1,43 @@
+{
+    "workingName": "Extra Stars",
+    "frontendConfig": {
+        "file": "fe_config.json",
+        "sha256": "10e26692eb1d769813a1acb57884ac59193ca5fbd7438f26d63534c148186d0c"
+    },
+    "gameID": "extra_stars",
+    "rtp": 95.78,
+    "betDenomination": 1000,
+    "minDenomination": 10,
+    "providerNumber": 0,
+    "standardForceFile": {
+        "file": "force.json",
+        "sha256": "0df402756200ebaaed914ef2d638abf040c151fcef8ce6ffddc5a8d4aef2d766"
+    },
+    "bookShelfConfig": [
+        {
+            "name": "base",
+            "tables": [
+                {
+                    "file": "lookUpTable_base_0.csv",
+                    "sha256": "8b31a9d50b873f1d165c79f7759029483c76d87ddc3b33c6ddd1da33371df934"
+                }
+            ],
+            "cost": 1.0,
+            "rtp": 0.9578,
+            "std": 107.86,
+            "bookLength": 1000,
+            "feature": true,
+            "autoEndRoundDisabled": false,
+            "buyBonus": false,
+            "maxWin": 2000.0,
+            "booksFile": {
+                "file": "books_base.jsonl.zst",
+                "sha256": "172fc073b72c786f37c2f63990cc917e6544d059258759b09f522f775a74355f"
+            },
+            "forceFile": {
+                "file": "force_record_base.json",
+                "sha256": "94931ad826ef200d48548efac610d83718249493e4fada0742ddd569e540a0df"
+            }
+        }
+    ]
+}

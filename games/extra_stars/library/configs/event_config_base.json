@@ -1,0 +1,223 @@
+{
+    "reveal": {
+        "type": "reveal",
+        "board": [
+            [
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "struguri"
+                }
+            ],
+            [
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "lamaie"
+                }
+            ],
+            [
+                {
+                    "name": "stea",
+                    "wild": true
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "portocala"
+                }
+            ],
+            [
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "lubenita"
+                }
+            ],
+            [
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "cireasa"
+                }
+            ]
+        ],
+        "paddingPositions": [
+            18,
+            7,
+            37,
+            9,
+            24
+        ],
+        "gameType": "basegame",
+        "anticipation": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "winInfo": {
+        "type": "winInfo",
+        "totalWin": 300,
+        "wins": [
+            {
+                "symbol": "cireasa",
+                "kind": 3,
+                "win": 100,
+                "positions": [
+                    {
+                        "reel": 0,
+                        "row": 3
+                    },
+                    {
+                        "reel": 1,
+                        "row": 3
+                    },
+                    {
+                        "reel": 2,
+                        "row": 3
+                    }
+                ],
+                "meta": {
+                    "lineIndex": 3,
+                    "multiplier": 1,
+                    "winWithoutMult": 100,
+                    "globalMult": 1,
+                    "lineMultiplier": 1,
+                    "direction": "ltr"
+                }
+            },
+            {
+                "symbol": "cireasa",
+                "kind": 3,
+                "win": 100,
+                "positions": [
+                    {
+                        "reel": 0,
+                        "row": 1
+                    },
+                    {
+                        "reel": 1,
+                        "row": 2
+                    },
+                    {
+                        "reel": 2,
+                        "row": 3
+                    }
+                ],
+                "meta": {
+                    "lineIndex": 4,
+                    "multiplier": 1,
+                    "winWithoutMult": 100,
+                    "globalMult": 1,
+                    "lineMultiplier": 1,
+                    "direction": "ltr"
+                }
+            },
+            {
+                "symbol": "cireasa",
+                "kind": 3,
+                "win": 100,
+                "positions": [
+                    {
+                        "reel": 0,
+                        "row": 3
+                    },
+                    {
+                        "reel": 1,
+                        "row": 2
+                    },
+                    {
+                        "reel": 2,
+                        "row": 3
+                    }
+                ],
+                "meta": {
+                    "lineIndex": 10,
+                    "multiplier": 1,
+                    "winWithoutMult": 100,
+                    "globalMult": 1,
+                    "lineMultiplier": 1,
+                    "direction": "ltr"
+                }
+            }
+        ]
+    },
+    "setWin": {
+        "type": "setWin",
+        "amount": 300,
+        "winLevel": 4
+    },
+    "setTotalWin": {
+        "type": "setTotalWin",
+        "amount": 300
+    },
+    "finalWin": {
+        "type": "finalWin",
+        "amount": 300
+    },
+    "expandingWilds": {
+        "type": "expandingWilds",
+        "wildReels": [
+            {
+                "reel": 3,
+                "row": 1
+            }
+        ]
+    },
+    "respinTrigger": {
+        "type": "respinTrigger",
+        "lockedReels": [
+            3
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "base": {
+        "gametype": [
+            "basegame"
+        ],
+        "kind": [
+            "4",
+            "5",
+            "3"
+        ],
+        "mult": [
+            "1"
+        ],
+        "symbol": [
+            "struguri",
+            "lamaie",
+            "pruna",
+            "septar",
+            "banane",
+            "cireasa",
+            "portocala",
+            "lubenita"
+        ]
+    }
+}

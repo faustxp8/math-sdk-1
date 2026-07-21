@@ -1,0 +1,839 @@
+{
+    "providerName": "sample_provider",
+    "gameName": "sample_lines",
+    "gameID": "extra_stars",
+    "rtp": 0.9578,
+    "numReels": 5,
+    "numRows": [
+        3,
+        3,
+        3,
+        3,
+        3
+    ],
+    "betModes": {
+        "base": {
+            "cost": 1.0,
+            "feature": true,
+            "buyBonus": false,
+            "rtp": 0.9578,
+            "max_win": 2000.0
+        }
+    },
+    "paylines": {
+        "1": [
+            1,
+            1,
+            1,
+            1,
+            1
+        ],
+        "2": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "3": [
+            2,
+            2,
+            2,
+            2,
+            2
+        ],
+        "4": [
+            0,
+            1,
+            2,
+            1,
+            0
+        ],
+        "5": [
+            2,
+            1,
+            0,
+            1,
+            2
+        ],
+        "6": [
+            0,
+            0,
+            1,
+            0,
+            0
+        ],
+        "7": [
+            2,
+            2,
+            1,
+            2,
+            2
+        ],
+        "8": [
+            1,
+            1,
+            0,
+            1,
+            1
+        ],
+        "9": [
+            0,
+            1,
+            0,
+            1,
+            0
+        ],
+        "10": [
+            2,
+            1,
+            2,
+            1,
+            2
+        ]
+    },
+    "symbols": [
+        {
+            "struguri": {
+                "paytable": [
+                    {
+                        "5": 20
+                    },
+                    {
+                        "4": 5
+                    },
+                    {
+                        "3": 2
+                    }
+                ]
+            }
+        },
+        {
+            "pruna": {
+                "paytable": [
+                    {
+                        "5": 15
+                    },
+                    {
+                        "4": 3
+                    },
+                    {
+                        "3": 1
+                    }
+                ]
+            }
+        },
+        {
+            "septar": {
+                "paytable": [
+                    {
+                        "5": 100
+                    },
+                    {
+                        "4": 50
+                    },
+                    {
+                        "3": 10
+                    }
+                ]
+            }
+        },
+        {
+            "stea": {
+                "paytable": null,
+                "special_properties": [
+                    "wild"
+                ]
+            }
+        },
+        {
+            "cireasa": {
+                "paytable": [
+                    {
+                        "5": 10
+                    },
+                    {
+                        "4": 2
+                    },
+                    {
+                        "3": 1
+                    }
+                ]
+            }
+        },
+        {
+            "banane": {
+                "paytable": [
+                    {
+                        "5": 50
+                    },
+                    {
+                        "4": 20
+                    },
+                    {
+                        "3": 5
+                    }
+                ]
+            }
+        },
+        {
+            "lamaie": {
+                "paytable": [
+                    {
+                        "5": 10
+                    },
+                    {
+                        "4": 2
+                    },
+                    {
+                        "3": 1
+                    }
+                ]
+            }
+        },
+        {
+            "portocala": {
+                "paytable": [
+                    {
+                        "5": 15
+                    },
+                    {
+                        "4": 3
+                    },
+                    {
+                        "3": 1
+                    }
+                ]
+            }
+        },
+        {
+            "lubenita": {
+                "paytable": [
+                    {
+                        "5": 20
+                    },
+                    {
+                        "4": 5
+                    },
+                    {
+                        "3": 2
+                    }
+                ]
+            }
+        }
+    ],
+    "paddingReels": {
+        "basegame": [
+            [
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "banane"
+                }
+            ],
+            [
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "stea"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "stea"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "struguri"
+                }
+            ],
+            [
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "stea"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "cireasa"
+                }
+            ],
+            [
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "stea"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "stea"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "stea"
+                }
+            ],
+            [
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "struguri"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "septar"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "lamaie"
+                },
+                {
+                    "name": "banane"
+                },
+                {
+                    "name": "cireasa"
+                },
+                {
+                    "name": "lubenita"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "portocala"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "pruna"
+                },
+                {
+                    "name": "banane"
+                }
+            ]
+        ]
+    }
+}
